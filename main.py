@@ -68,6 +68,6 @@ class main(Resource):
         return list(map(lambda x: x.json(), Student.query.all()))
 
 
-api.add_resource(main, '/mcit/cst-students/all')
+api.add_resource(main, '/')
 if __name__ == '__main__':
     app.run()
